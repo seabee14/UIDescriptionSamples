@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Empty div -->
+    <div id="mount-point"></div>
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script>
+      const header = React.createElement(
+        "h1",
+        { className: "heading" },
+        "Languages"
+      );
+      const item1 = React.createElement("li", null, "Javascript");
+      const item2 = React.createElement("li", null, "Java");
+      const item3 = React.createElement("li", null, "Python");
+
+      const list = React.createElement("ul", null, item1, item2, item3);
+      const rootElement = React.createElement(
+        "div",
+        { className: "pad" },
+        header,
+        list
+      );
+      ReactDOM.render(rootElement, document.getElementById("mount-point"));
+    </script>
+  </body>
+</html>

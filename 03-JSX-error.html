@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script> -->
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="mount-point"></div>
+    <!-- Loading this code in the browser will throw an ERROR!!! -->
+    <script>
+      const rootElement = (
+        <div className="pad">
+          <h1 className="heading">Languages</h1>
+          <ul>
+            <li>Javascript</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      );
+      ReactDOM.render(rootElement, document.getElementById("mount-point"));
+    </script>
+  </body>
+</html>

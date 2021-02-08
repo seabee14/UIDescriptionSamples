@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="mount-point"></div>
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script>
+      const rootElement = React.createElement(
+        "div",
+        { className: "pad" },
+        React.createElement("h1", { className: "heading" }, "Languages"),
+        React.createElement(
+          "ul",
+          null,
+          React.createElement("li", null, "Javascript"),
+          React.createElement("li", null, "Java"),
+          React.createElement("li", null, "Python")
+        )
+      );
+      ReactDOM.render(rootElement, document.getElementById("mount-point"));
+    </script>
+  </body>
+</html>
